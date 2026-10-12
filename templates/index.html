@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<section class="hero">
+
+<div class="hero">
+    <img src="static/southy.png" class="logo">
+    <h2>Get Help. Anytime. Anywhere.</h2>
+    <p>Need help with moving, cleaning, gardening or anything else? Post a job and we’ll handle the rest.</p>
+    <a href="/post-job" class="btn">Post a Job</a>
+</div>
+
+<section class="features">
+    <h2>How It Works</h2>
+
+    <div class="feature-grid">
+        <div class="feature">
+            <h3>1. Post a Job</h3>
+            <p>Tell us what you need help with in less than 2 minutes.</p>
+        </div>
+
+        <div class="feature">
+            <h3>2. We Organize</h3>
+            <p>We find the right person for your job quickly.</p>
+        </div>
+
+        <div class="feature">
+            <h3>3. Get It Done</h3>
+            <p>Your task gets completed without stress.</p>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <h2>Popular Services</h2>
+
+    <div class="service-grid">
+        <div class="service-card">🌿 Gardening</div>
+        <div class="service-card">🚚 Moving</div>
+        <div class="service-card">🧹 Cleaning</div>
+        <div class="service-card">🔧 Handyman</div>
+        <div class="service-card">📦 Errands</div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Need Help Today?</h2>
+    <p>Post your job now and get assistance fast.</p>
+    <a href="/post-job" class="btn">Get Started</a>
+</section>
+
+{% endblock %}

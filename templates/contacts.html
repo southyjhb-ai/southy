@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>southy</title>
+    <style>
+        .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    background:#0f172a;
+    color:white;
+}
+
+/* LINKS */
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HAMBURGER */
+.menu-toggle{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* MOBILE NAV */
+@media(max-width:768px){
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:60px;
+        right:0;
+        background:#0f172a;
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        display:none;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.nav-links a:hover{
+color:#d4af37;
+}
+
+
+      .info-box {
+        background: #f1f5f9;
+        padding: 15px;
+        border-radius: 8px;
+         margin: 20px 0;
+        text-align: left;
+        font-size: 14px;
+}
+
+    
+    </style>
+</head>
+<body>
+    <header>
+<nav class="navbar">
+    <h2>southy</h2>
+
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/post-job">Services</a></li>
+        <li><a href="/contacts">Contact</a></li>
+    </ul>
+</nav>
+</header>
+    <div class="info-box">
+        <p>📞phone number :0787269514 </p>
+         <p>📧Email : southyjhb@gmail.com </p>
+         <p>📘facebook : southy jhb</p>
+         <p>📸instagram : southyjhb </p>
+        
+    </div>
+
+    <script>
+
+const toggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav-links');
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+</script>
+
+</body>
+</html>
